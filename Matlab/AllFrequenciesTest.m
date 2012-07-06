@@ -1,8 +1,6 @@
 clear;
 try
     % Load the .NET assemblies
-    DSPConnectorAsm = NET.addAssembly('C:\src\instrumentation\Dsp\KISS\KissXi\PCTest\PCTest\Macros\bin\Debug\DSPConnector.dll');
-    ExtendedConnectorAsm = NET.addAssembly('C:\src\instrumentation\Dsp\KISS\KissXi\PCTest\PCTest\Macros\bin\Debug\ItemHandler.dll');
     MacrosAsm = NET.addAssembly('C:\src\instrumentation\Dsp\KISS\KissXi\PCTest\PCTest\Macros\bin\Debug\Macros.dll');
 
     % Instantiate connectors etc.

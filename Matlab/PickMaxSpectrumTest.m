@@ -1,12 +1,10 @@
 clear;
 try
     % Load the .NET assemblies
-    DSPConnectorAsm = NET.addAssembly('C:\src\instrumentation\Dsp\KISS\KissXi\PCTest\PCTest\DSPConnector\bin\Debug\DSPConnector.dll');
-    ExtendedConnectorAsm = NET.addAssembly('C:\src\instrumentation\Dsp\KISS\KissXi\PCTest\PCTest\ItemHandler\bin\Debug\ItemHandler.dll');
-    MacrosAsm = NET.addAssembly('C:\src\instrumentation\Dsp\KISS\KissXi\PCTest\PCTest\Macros\bin\Debug\Macros.dll');
+    MacrosAsm = NET.addAssembly('C:\src\instrumentation\Dsp\KISS\KissXi\PCComm\Environment\Macros\bin\Debug\Macros.dll');
 
     % Instantiate connectors etc.
-    macros = Macros.MacroController('DK-W7-66VP72J', 1337, 'C:/src/instrumentation/Dsp/KISS/KissXi/VTS/Debug/VTS.out', 3, true, true);
+    macros = Macros.MacroController('DK-XP-7QWWH2J', 1337, 'C:/src/instrumentation/Dsp/KISS/KissXi/VTS/Debug/VTS.out', 3, true, true);
     % Open connection
     macros.Open();
 
